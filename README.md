@@ -3,9 +3,9 @@ Title: DVD Rental Business Data Analysis
 Purpose: To perform data analysis on a DVD rental business database, creating detailed and summary tables that provide insights into film rentals, categories, and inventory. 
 This project includes generating reports on the most rented films, most popular genres, and updating the data dynamically using triggers and stored procedures.
 
-Author: John DeLorme
+Author: jdelorm
 
-Contact: jdelorm@wgu.edu
+Contact: jdelorm@bot.com
 
 Version: 1.3
 
