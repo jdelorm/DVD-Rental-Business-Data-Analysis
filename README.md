@@ -1,22 +1,35 @@
-Project made using pgAdmin 4 and PostgreSQL to create detailed and summary tables using a DVD rental database
+Title: DVD Rental Business Data Analysis
 
-This project uses SQL scripts to manage and refresh various database tables used in a film rental system. 
-The primary purpose is to maintain up-to-date summary tables based on raw data from the detailed table.
+Purpose: To perform data analysis on a DVD rental business database, creating detailed and summary tables that provide insights into film rentals, categories, and inventory. 
+This project includes generating reports on the most rented films, most popular genres, and updating the data dynamically using triggers and stored procedures.
 
-Creates and updates multiple summary tables (`summary1`, `summary2`).
-Uses triggers and stored procedures to refresh data automatically when the detailed table is updated.
-Includes functionality to reset and refresh all relevant tables for testing purposes.
+Author: John DeLorme
 
-`detailed`: Contains film rental data with film details and categories.
-`summary1`: Provides a summary of the most rented films.
-`summary2`: Summarizes the most rented film genres.
+Contact: jdelorm@wgu.edu
 
-Initial Table Creation**: The code creates necessary tables like `detailed`, `summary1`, and `summary2` by joining data from multiple film-related tables (`film`, `film_category`, `category`, `inventory`).
-Trigger for Automatic Updates**: A trigger is set up to refresh the summary tables whenever data is inserted into the `detailed` table.
-Stored Procedure for Full Refresh**: A stored procedure is included to reset and refresh all tables (`detailed`, `summary1`, `summary2`) with updated data.
+Version: 1.3
 
-To test the functionality
+Date: 4/14/2024
 
-Run the SQL scripts that create the tables and populate them with initial data.
-Call the `refresh_detailed_and_summary_tables` procedure to reset and refresh all tables.
-Use the `ROLLBACK;` command to undo changes for testing purposes.
+IDE: PyCharm Community Edition 2024.2
+
+Python Version: 3.9
+
+Libraries:
+
+1. Pandas 1.5.3
+2. SQLAlchemy 2.0.7
+3. psycopg2 2.9.5
+
+How to Get Program to Run:
+
+1. Install the latest edition of PyCharm Community.
+2. Go to "Get from VCS" on the welcome screen.
+3. Paste this URL: https://github.com/jdelorm/DVD-Rental-Business-Data-Analysis
+4. Choose where to save the project and click "Clone".
+5. Install the required libraries:
+   Open the terminal within PyCharm and type the following command to install the necessary libraries:
+   pip install pandas sqlalchemy psycopg2
+6. Set up the PostgreSQL database with the DVD rental data.
+7. Once the project loads, find and open Main.py.
+8. Click "RUN" or the green arrow in the IDE to execute the program and perform the data analysis. The program will generate the required tables (detailed, summary1, summary2) and display reports based on film rentals and categories.
